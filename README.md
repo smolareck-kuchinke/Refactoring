@@ -15,3 +15,9 @@ Ergo weniger komplex, leichetr erweiterbar, bessere Wartbarkeit. Sinnvoller Eins
 Finde ich überflüssig. IDEs können heute Methoden auch schon automatisch umbenennen. Das Refactoring hat hier kaum Auswirkungen auf Struktur oder Architerktur des Programms.
 
 ## 2. IDE
+
+Ich verwende hauptsächlich Eclipse.
+
+Rename - Rename Method/ Rename Field / Rename Class
+Move - Move  Methid / Move Field
+Change Method Signature - Rename Method / Add parameter / Remove parameter / Introduce Parameter Object
