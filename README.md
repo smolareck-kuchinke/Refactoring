@@ -55,3 +55,55 @@ Methode in 3.1. enthält mehrere unterschiedliche Aufgaben.
 Für das Refactoring habe ich die Refactoring-Funktion von Eclipse genutzt. Also nacheinander den betreffenden Codeblock ausgewählt und dann unter Refactoring -> Methode extrahieren ... ausgewählt und der neuen Methode einen entsprechenden Namen vergeben.
 Durch das Extrahieren der verschiedenen Codeblöcke in eigene Methoden ist der Code besser wartbar und klar nach Verantwortlichkeiten getrennt. 
 
+## 4. Refactoring mit AI
+
+### 4.1 Chat GPT: Replace Conditional with Polymorphism
+
+Prompt: 
+Refaktoriere folgenden Java-Code nach einem geeigneten Fowler-Refactoring "Replace Conditional with Polymorphism", siehe https://www.refactoring.com/catalog/. 
+Erkläre außerdem, welches Refactoring angewendet wurde und warum es den Code verbessert.
+
+```java
+public double berechnePreis(String ticketTyp) {
+
+    if (ticketTyp.equals("VIP")) {
+        return 120;
+    }
+
+    if (ticketTyp.equals("NORMAL")) {
+        return 40;
+    }
+
+    if (ticketTyp.equals("KIND")) {
+        return 20;
+    }
+
+    return 0;
+}
+```
+Viele Bedingungen, bei jedem neuen Tickettyp müsse die Methode verändert werden.
+Refactoring:
+
+abstract class Ticket {
+    abstract double getPreis();
+}
+
+class VIPTicket extends Ticket {
+    double getPreis() { return 120; }
+}
+
+class NormalTicket extends Ticket {
+    double getPreis() { return 40; }
+}
+
+Hat auf Anhieb funktioniert.
+Ich würde hier aber noch nachsteuern und jeweils @override hinzufügen, damit der Compiler prüft, ob wirklich eine Methode der Oberklasse überschriebn wird und auch Fehler sofort erkannt werden und nicht erst später.
+
+
+### 4.2 Claude Code: Extract Method 
+
+
+
+
+
+
