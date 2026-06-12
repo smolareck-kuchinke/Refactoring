@@ -20,24 +20,25 @@ Ich verwende hauptsächlich Eclipse.
 Über den Reiter "Refactoring" sind viele strukturellen Refactorings von Fowler abrufbar wie
 
 Extract Method
-Extract Variable (Extract Local Variable)
+Extract Variable 
 Extract Constant
 Extract Class
-Extract Interface (Extract Superclass)
+Extract Interface 
 Inline Method
-Inline Variable (Inline Temp)
-Rename (Rename Field, Rename Variable, Rename Method, Rename Class)
-Move Method (Move Static Members / Move Instance Method)
+Inline Variable 
+Rename Field, Variable ...
+Move Method 
 Move Field
 Pull Up Method
 Pull Up Field etc. 
 
 Jedoch nicht komplexere Umbauten wie
 
-Conditionals
-Polymorphismus etc.
+Replace Conditional with Polymorphism
+Replace Type Code with Subclasses
+Substitute Algorithm etc.
 
-Diese müssen tatsächlich manuelle vorgenommen werden.
+Diese müssen tatsächlich manuell vorgenommen werden.
 
 
 ## 3. Refactoring
