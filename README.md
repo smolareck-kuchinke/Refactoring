@@ -17,10 +17,28 @@ Finde ich überflüssig. IDEs können heute Methoden auch schon automatisch umbe
 ## 2. IDE
 
 Ich verwende hauptsächlich Eclipse.
+Über den Reiter "Refactoring" sind viele strukturellen Refactorings von Fowler abrufbar wie
 
-Rename - Rename Method/ Rename Field / Rename Class
-Move - Move  Methid / Move Field
-Change Method Signature - Rename Method / Add parameter / Remove parameter / Introduce Parameter Object
+Extract Method
+Extract Variable (Extract Local Variable)
+Extract Constant
+Extract Class
+Extract Interface (Extract Superclass)
+Inline Method
+Inline Variable (Inline Temp)
+Rename (Rename Field, Rename Variable, Rename Method, Rename Class)
+Move Method (Move Static Members / Move Instance Method)
+Move Field
+Pull Up Method
+Pull Up Field etc. 
+
+Jedoch nicht komplexere Umbauten wie
+
+Conditionals
+Polymorphismus etc.
+
+Diese müssen tatsächlich manuelle vorgenommen werden.
+
 
 ## 3. Refactoring
 ### 3.1. Mein Code zum Ticketkauf im Projekt SpieltagPLUS
