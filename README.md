@@ -112,6 +112,9 @@ Ich würde hier aber noch nachsteuern und jeweils @override hinzufügen, damit d
 
 ### 4.2 Claude Code: Extract Method 
 
+Prompt: 
+Erstelle mir einen nicht-trivialen Java-Code-Ausschnitt aus meinem Github-Repo https://github.com/smolareck-kuchinke/Spieltag-PLUS , der eine Methode enthält, die mehrere Verantwortlichkeiten vermischt (z. B. Protokollierung, Validierung und Ereignis) Wende dann das Refactoring 'Extract Method' nach Fowler an, vgl. https://www.refactoring.com/catalog/.
+
 ``` Java
 public class SpielereignisService {
 
@@ -161,5 +164,7 @@ public class SpielereignisService {
     }
 }
 ```
+Ja, es hat auf Anhieb geklappt. Der Ausgangscode hatte mehrere Aufgaben gleichzeitig in der Methode verarbeiteSpielereignis().
+Die AI hat den Code in zwei fachliche Blöcke aufgeteilt: Protokollieren und Melden. -> klare Verantwortlichkeiten, wiederverwendbare Methoden
 
 
