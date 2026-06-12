@@ -101,7 +101,6 @@ class NormalTicket extends Ticket {
         }
 }
 class KindTicket extends Ticket {
-
     double getPreis() {
         return 20;
         }
