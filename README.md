@@ -30,3 +30,9 @@ Change Method Signature - Rename Method / Add parameter / Remove parameter / Int
 ### 3.2 Refactoring nach Fowler: Extract Method
 
 ![Code nachher](images/Refactoring.png)
+
+Erklärung: 
+Methode in 3.1. enthält mehrere unterschiedliche Aufgaben.
+Für das Refactoring habe ich die Refactoring-Funktion von Eclipse genutzt. Also nacheinander den betreffenden Codeblock ausgewählt und dann unter Refactoring -> Methode extrahieren ... ausgewählt und der neuen Methode einen entsprechenden Namen vergeben.
+Durch das Extrahieren der verschiedenen Codeblöcke in eigene Methoden ist der Code besser wartbar und klar nach Verantwortlichkeiten getrennt. 
+
