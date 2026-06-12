@@ -90,11 +90,21 @@ abstract class Ticket {
 }
 
 class VIPTicket extends Ticket {
-    double getPreis() { return 120; }
+    double getPreis() {
+        return 120;
+        }
 }
 
 class NormalTicket extends Ticket {
-    double getPreis() { return 40; }
+    double getPreis() { 
+        return 40;
+        }
+}
+class KindTicket extends Ticket {
+
+    double getPreis() {
+        return 20;
+        }
 }
 ```
 Hat auf Anhieb funktioniert. Die AI erzeugte eine abstrakte Ticket-Klasse mit Unterklassen für die speziellen Tickettypen.
