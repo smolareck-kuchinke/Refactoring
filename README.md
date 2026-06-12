@@ -98,7 +98,7 @@ class NormalTicket extends Ticket {
 }
 ```
 Hat auf Anhieb funktioniert. Die AI erzeugte eine abstrakte Ticket-Klasse mit Unetrklassen für die speziellen Tickettypen.
-Ich würde hier aber noch nachsteuern und jeweils @override hinzufügen, damit der Compiler prüft, ob wirklich eine Methode der Oberklasse überschriebn wird und auch Fehler sofort erkannt werden und nicht erst später.
+Ich würde hier aber noch nachsteuern und jeweils @override hinzufügen, damit der Compiler prüft, ob wirklich eine Methode der Oberklasse überschrieben wird und auch Fehler sofort erkannt werden und nicht erst später.
 
 
 ### 4.2 Claude Code: Extract Method 
