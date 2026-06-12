@@ -112,8 +112,54 @@ Ich würde hier aber noch nachsteuern und jeweils @override hinzufügen, damit d
 
 ### 4.2 Claude Code: Extract Method 
 
+``` Java
+public class SpielereignisService {
 
+    public void verarbeiteSpielereignis(String spielerName, String ereignisTyp, int minute) {
+        System.out.println("Ereignis: " + ereignisTyp);
+        System.out.println("Spieler: " + spielerName);
+        System.out.println("Minute: " + minute);
 
+        if (ereignisTyp.equals("TOR")) {
+            System.out.println(spielerName + " trifft in Minute " + minute + "! TOOOR!");
+        } else if (ereignisTyp.equals("GELBE_KARTE")) {
+            System.out.println(spielerName + " sieht Gelb in Minute " + minute + ".");
+        } else if (ereignisTyp.equals("ROTE_KARTE")) {
+            System.out.println(spielerName + " sieht Rot in Minute " + minute + "! Vom Platz!");
+        }
 
+        System.out.println("Ereignis gespeichert.");
+    }
+}
+```
+
+Refactoring:
+
+``` Java
+public class SpielereignisService {
+
+    public void verarbeiteSpielereignis(String spielerName, String ereignisTyp, int minute) {
+        protokolliereEreignis(spielerName, ereignisTyp, minute);
+        meldeEreignis(spielerName, ereignisTyp, minute);
+        System.out.println("Ereignis gespeichert.");
+    }
+
+    private void protokolliereEreignis(String spielerName, String ereignisTyp, int minute) {
+        System.out.println("Ereignis: " + ereignisTyp);
+        System.out.println("Spieler: " + spielerName);
+        System.out.println("Minute: " + minute);
+    }
+
+    private void meldeEreignis(String spielerName, String ereignisTyp, int minute) {
+        if (ereignisTyp.equals("TOR")) {
+            System.out.println(spielerName + " trifft in Minute " + minute + "! TOOOR!");
+        } else if (ereignisTyp.equals("GELBE_KARTE")) {
+            System.out.println(spielerName + " sieht Gelb in Minute " + minute + ".");
+        } else if (ereignisTyp.equals("ROTE_KARTE")) {
+            System.out.println(spielerName + " sieht Rot in Minute " + minute + "! Vom Platz!");
+        }
+    }
+}
+```
 
 
