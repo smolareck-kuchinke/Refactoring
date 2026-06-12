@@ -25,8 +25,8 @@ Change Method Signature - Rename Method / Add parameter / Remove parameter / Int
 ## 3. Refactoring
 ### 3.1. Mein Code zum Ticketkauf im Projekt SpieltagPLUS
 
-![Code vorher](images/code.png)
+![Code vorher](images/Code.png)
 
 ### 3.2 Refactoring nach Fowler: Extract Method
 
-![Code nachher](images/refactoring.png)
+![Code nachher](images/Refactoring.png)
