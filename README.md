@@ -96,7 +96,7 @@ class VIPTicket extends Ticket {
 class NormalTicket extends Ticket {
     double getPreis() { return 40; }
 }
-
+```
 Hat auf Anhieb funktioniert. Die AI erzeugte eine abstrakte Ticket-Klasse mit Unetrklassen für die speziellen Tickettypen.
 Ich würde hier aber noch nachsteuern und jeweils @override hinzufügen, damit der Compiler prüft, ob wirklich eine Methode der Oberklasse überschriebn wird und auch Fehler sofort erkannt werden und nicht erst später.
 
