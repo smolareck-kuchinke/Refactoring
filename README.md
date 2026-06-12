@@ -21,3 +21,12 @@ Ich verwende hauptsächlich Eclipse.
 Rename - Rename Method/ Rename Field / Rename Class
 Move - Move  Methid / Move Field
 Change Method Signature - Rename Method / Add parameter / Remove parameter / Introduce Parameter Object
+
+## 3. Refactoring
+### 3.1. Mein Code zum Ticketkauf im Projekt SpieltagPLUS
+
+![Code vorher](images/code.png)
+
+### 3.2 Refactoring nach Fowler: Extract Method
+
+![Code nachher](images/refactoring.png)
