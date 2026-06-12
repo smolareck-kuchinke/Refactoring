@@ -60,7 +60,7 @@ Durch das Extrahieren der verschiedenen Codeblöcke in eigene Methoden ist der C
 ### 4.1 Chat GPT: Replace Conditional with Polymorphism
 
 Prompt: 
-Refaktoriere folgenden Java-Code nach einem geeigneten Fowler-Refactoring "Replace Conditional with Polymorphism", siehe https://www.refactoring.com/catalog/. 
+Refaktoriere folgenden Java-Code nach dem Fowler-Refactoring "Replace Conditional with Polymorphism", siehe https://www.refactoring.com/catalog/. 
 Erkläre außerdem, welches Refactoring angewendet wurde und warum es den Code verbessert.
 
 ```java
