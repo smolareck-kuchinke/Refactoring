@@ -165,6 +165,6 @@ public class SpielereignisService {
 }
 ```
 Ja, es hat auf Anhieb geklappt. Der Ausgangscode hatte mehrere Aufgaben gleichzeitig in der Methode verarbeiteSpielereignis().
-Die AI hat den Code in zwei fachliche Blöcke aufgeteilt: Protokollieren und Melden. -> klare Verantwortlichkeiten, wiederverwendbare Methoden
+Die AI hat den Code in zwei neue fachliche Methoden extrahiert: Protokollieren und Melden. -> kürzere Hauptmethode, klare Verantwortlichkeiten, wiederverwendbare Methoden
 
 
