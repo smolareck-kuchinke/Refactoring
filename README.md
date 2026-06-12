@@ -4,7 +4,7 @@
 
 ### 1.1 Extract Method
 Finde ich selbst toll, weil die Lesbarkeit von Code auch durch kleine Änderungen schon verbessert wird. 
-Ergo wereden lange Methoden hier in kleinere aufgeteilt, damit wird der Code verständlicher, wartbarer und testbarer.
+Ergo werden lange Methoden hier in kleinere aufgeteilt, damit wird der Code verständlicher, wartbarer und testbarer.
 Also eine einfache Methode mit großer Wirkung. 
 
 ### 1.2 Replace Conditional with Polymorphism 
