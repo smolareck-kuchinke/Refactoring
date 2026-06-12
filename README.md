@@ -81,9 +81,10 @@ public double berechnePreis(String ticketTyp) {
     return 0;
 }
 ```
-Viele Bedingungen, bei jedem neuen Tickettyp müsse die Methode verändert werden.
+Viele Bedingungen, bei jedem neuen Tickettyp müsste also die Methode verändert werden.
 Refactoring:
 
+```java
 abstract class Ticket {
     abstract double getPreis();
 }
@@ -96,7 +97,7 @@ class NormalTicket extends Ticket {
     double getPreis() { return 40; }
 }
 
-Hat auf Anhieb funktioniert.
+Hat auf Anhieb funktioniert. Die AI erzeugte eine abstrakte Ticket-Klasse mit Unetrklassen für die speziellen Tickettypen.
 Ich würde hier aber noch nachsteuern und jeweils @override hinzufügen, damit der Compiler prüft, ob wirklich eine Methode der Oberklasse überschriebn wird und auch Fehler sofort erkannt werden und nicht erst später.
 
 
